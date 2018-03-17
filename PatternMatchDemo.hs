@@ -41,7 +41,7 @@ sum' [] = 0
 sum' [a] = a
 sum' (x:xs) = x + sum' xs
 
--- @ annotation lets us use the compplete pattern elsewhere
+-- @ annotation lets us use the complete pattern elsewhere
 capital :: String -> String
 capital "" = "Empty string, whoops!"
 -- all is annotated and can be used in the expression
