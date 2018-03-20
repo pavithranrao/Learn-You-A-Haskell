@@ -91,6 +91,11 @@ bmiCalcBind' weight height
 initials firstname lastname = [f] ++ ". " ++ [l] ++ "."
     where (f:_) = firstname
           (l:_) = lastname
+    
+max' :: (Ord a) => a -> a -> a  
+max' a b   
+    | a > b     = a  
+    | otherwise = b  
 
 main :: IO ()
 main = do
